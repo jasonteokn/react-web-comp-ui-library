@@ -20,6 +20,8 @@
   align-items: center;
   width: 5rem;
   height: 4.5rem;
+  color: var(--color-white);
+  text-decoration: none;
 }
 .navbar__logo:hover svg {
   filter: drop-shadow(0 0 0.3rem var(--color-white));

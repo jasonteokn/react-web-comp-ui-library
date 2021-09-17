@@ -1,4 +1,4 @@
 export const PAGE_ROUTE = {
-  LOGIN: 'LOGIN',
-  LANDING: 'LANDING',
+  LOGIN: '/login',
+  LANDING: '/landing',
 }
