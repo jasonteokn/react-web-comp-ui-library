@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  flex: 1 auto;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 auto;
+  }
+}
+.main__navbar {
+  display: flex;
+}
+.main__content {
+  display: flex;
+  flex: 1 auto;
+  overflow: hidden;
+}

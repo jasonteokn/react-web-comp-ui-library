@@ -1,0 +1,258 @@
+:root {
+  --screen-xs: 360px;
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1080px;
+  --screen-xl: 1280px;
+
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
+  --chart-green: #13c998;
+  --chart-yellow: #ffb121;
+  --chart-orange: #ff681d;
+  --chart-red: #cf2929;
+
+  --color-white: #ffffff;
+  --color-orange: #ff722b;
+  --color-crimson: #ff3e3e;
+  --crimson-60: #ff4724;
+  --azule-10: #e6f4ff;
+
+  --color-info: #8657ff;
+  --color-success: #2bc600;
+  --color-warning: #ffb024;
+  --color-danger: #ff4724;
+
+  --theme-00: #f2faff;
+  --theme-10: #e5f4ff;
+  --theme-20: #cceaff;
+  --theme-30: #99d5ff;
+  --theme-40: #66bfff;
+  --theme-50: #33aaff;
+  --theme-60: #0095ff;
+  --theme-70: #0077cc;
+  --theme-80: #0061a6;
+  --theme-90: #004b80;
+  --theme-100: #003459;
+  --theme-110: #002540;
+
+  --slate-00: #f5f7f9;
+  --slate-10: #eef2f5;
+  --slate-20: #dde3e7;
+  --slate-30: #c7cfd5;
+  --slate-40: #b0b9c0;
+  --slate-50: #9ba4ab;
+  --slate-60: #858f96;
+  --slate-70: #6f7a81;
+  --slate-80: #59656d;
+  --slate-90: #455057;
+  --slate-100: #303c44;
+  --slate-110: #172733;
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  :root {
+    font-size: 0.55rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  :root {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 1080px) and (max-width: 1280px) {
+  :root {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  :root {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  :root {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  :root {
+    font-size: 1.2rem;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* common CSS, prefix with double underscore */
+.__topPad_sm {
+  padding-top: var(--space-sm);
+}
+.__topPad_md {
+  padding-top: var(--space-md);
+}
+.__topPad_lg {
+  padding-top: var(--space-lg);
+}
+.__topPad_xl {
+  padding-top: var(--space-xl);
+}
+.__leftPad_sm {
+  padding-left: var(--space-sm);
+}
+.__leftPad_md {
+  padding-left: var(--space-md);
+}
+.__leftPad_lg {
+  padding-left: var(--space-lg);
+}
+.__leftPad_xl {
+  padding-left: var(--space-xl);
+}
+.__bottomPad_sm {
+  padding-bottom: var(--space-sm);
+}
+.__bottomPad_md {
+  padding-bottom: var(--space-md);
+}
+.__bottomPad_lg {
+  padding-bottom: var(--space-lg);
+}
+.__bottomPad_xl {
+  padding-bottom: var(--space-xl);
+}
+.__rightPad_sm {
+  padding-right: var(--space-sm);
+}
+.__rightPad_md {
+  padding-right: var(--space-md);
+}
+.__rightPad_lg {
+  padding-right: var(--space-lg);
+}
+.__rightPad_xl {
+  padding-right: var(--space-xl);
+}
+
+.__topSpace_sm {
+  margin-top: var(--space-sm);
+}
+.__topSpace_md {
+  margin-top: var(--space-md);
+}
+.__topSpace_lg {
+  margin-top: var(--space-lg);
+}
+.__topSpace_xl {
+  margin-top: var(--space-xl);
+}
+.__leftSpace_sm {
+  margin-left: var(--space-sm);
+}
+.__leftSpace_md {
+  margin-left: var(--space-md);
+}
+.__leftSpace_lg {
+  margin-left: var(--space-lg);
+}
+.__leftSpace_xl {
+  margin-left: var(--space-xl);
+}
+.__bottomSpace_sm {
+  margin-bottom: var(--space-sm);
+}
+.__bottomSpace_md {
+  margin-bottom: var(--space-md);
+}
+.__bottomSpace_lg {
+  margin-bottom: var(--space-lg);
+}
+.__bottomSpace_xl {
+  margin-bottom: var(--space-xl);
+}
+.__rightSpace_sm {
+  margin-bottom: var(--space-sm);
+}
+.__rightSpace_md {
+  margin-bottom: var(--space-md);
+}
+.__rightSpace_lg {
+  margin-bottom: var(--space-lg);
+}
+.__rightSpace_xl {
+  margin-bottom: var(--space-xl);
+}
+
+/* Scrollbar */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--slate-50) var(--color-white);
+}
+/* Works on Chrome, Edge, Safari */
+*::-webkit-scrollbar-track {
+  background: var(--color-white);
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--slate-50);
+  border-radius: 0.25rem;
+  /* border: 4px solid white; */
+}
+
+/* https://fonts.googleapis.com/css?family=Open%20Sans:light,regular,semi-bold,bold&subset-latin */
+/* Latin only */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: 'normal';
+  font-weight: 300;
+  font-display: swap;
+  src: local(''), url('./resources/font/OpenSans-Light.ttf') format('woff2');
+  unicode-range: U+00-52F, U+1E00-1FFF, U+2200 –22FF;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: 'normal';
+  font-weight: 400;
+  font-display: swap;
+  src: local(''), url('./resources/font/OpenSans-Regular.ttf') format('woff2');
+  unicode-range: U+00-52F, U+1E00-1FFF, U+2200 –22FF;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: 'normal';
+  font-weight: 600;
+  font-display: swap;
+  src: local(''), url('./resources/font/OpenSans-SemiBold.ttf') format('woff2');
+  unicode-range: U+00-52F, U+1E00-1FFF, U+2200 –22FF;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: 'normal';
+  font-weight: 700;
+  font-display: swap;
+  src: local(''), url('./resources/font/OpenSans-Bold.ttf') format('woff2');
+  unicode-range: U+00-52F, U+1E00-1FFF, U+2200 –22FF;
+}

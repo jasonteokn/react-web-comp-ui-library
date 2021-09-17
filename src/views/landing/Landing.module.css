@@ -1,0 +1,10 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+.landing__main {
+  display: flex;
+}
