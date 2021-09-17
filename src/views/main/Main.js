@@ -17,7 +17,7 @@ function Main() {
       <div className={`${styles.main__content}`}>
         <Switch>
           <Route path={PAGE_ROUTE.LANDING} component={Landing} />
-          <Route render={() => <Redirect to={PAGE_ROUTE.LANDING} />} />
+          {/* <Route render={() => <Redirect to={PAGE_ROUTE.LANDING} />} /> */}
         </Switch>
       </div>
     </div>

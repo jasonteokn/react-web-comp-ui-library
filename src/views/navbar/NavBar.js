@@ -24,6 +24,8 @@ function NavBar() {
           v{packageJson.version}
         </div>
       </div>
+
+      <div className={`${styles.navbar__profile}`}></div>
     </div>
   )
 }

@@ -14,6 +14,7 @@
 }
 .main__navbar {
   display: flex;
+  /* width: 20%; */
 }
 .main__content {
   display: flex;
